@@ -5,6 +5,13 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
+// Add WMS layer to the map
+var wmsLayer = L.tileLayer.wms('WMS_URL', {
+    layers: 'WMS_LAYER_NAME',
+    format: 'image/png',
+    transparent: true
+}).addTo(map);
+
 var marker = L.marker([55.704660, 13.191007]).addTo(map);
 
 var popup = L.popup();
