@@ -7,9 +7,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 // Add WMS layer to the map
 var wmsLayer = L.tileLayer.wms('https://geodata.skane.se/geoserver/rs_geodata/wms?&request=getcapabilities', {
-    layers: 'potentialstudien_cykel_pendling_20min',
-    format: 'image/png',
-    transparent: true
+    layers: 'rs_geodata_cykelbarhetsklassning_v2',
 }).addTo(map);
 
 var marker = L.marker([55.704660, 13.191007]).addTo(map);
