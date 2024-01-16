@@ -6,8 +6,8 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 // Add WMS layer to the map
-var wmsLayer = L.tileLayer.wms('WMS_URL', {
-    layers: 'WMS_LAYER_NAME',
+var wmsLayer = L.tileLayer.wms('https://geodata.skane.se/geoserver/rs_geodata/wms?&request=getcapabilities', {
+    layers: 'potentialstudien_cykel_pendling_20min',
     format: 'image/png',
     transparent: true
 }).addTo(map);
