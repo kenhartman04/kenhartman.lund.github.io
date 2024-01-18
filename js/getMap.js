@@ -6,7 +6,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 // Add WMS layer to the map
-var wmsLayer = L.tileLayer.wms('https://geodata.skane.se/geoserver/rs_geodata/wms?', {
+var wmsLayer = L.tileLayer.wms('https://geodata.skane.se/geoserver/rs_geodata/wms', {
     layers: 'rs_geodata_cykelbarhetsklassning_v2',
 }).addTo(map);
 
