@@ -5,12 +5,12 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-// Add WMS layer to the map
-var wmsLayer = L.tileLayer.wms('https://geodata.skane.se/geoserver/rs_geodata/wms', {
-    layers: 'rs_geodata_cykelbarhetsklassning_v2',
+// Add Lantmäteriet's INSPIRE basemap WMS layer
+var wmsLayer = L.tileLayer.wms('https://maps.lantmateriet.se/inspire/basemap/wms/v1', {
+    layers: 'inspire_basemap',
     format: 'image/png',
     transparent: true,
-    attribution: 'WMS Service provided by Skåne Regional Council'
+    attribution: 'Map data: Lantmäteriet'
 }).addTo(map);
 
 var marker = L.marker([55.704660, 13.191007]).addTo(map);
