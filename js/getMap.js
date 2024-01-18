@@ -8,6 +8,9 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 // Add WMS layer to the map
 var wmsLayer = L.tileLayer.wms('https://geodata.skane.se/geoserver/rs_geodata/wms', {
     layers: 'rs_geodata_cykelbarhetsklassning_v2',
+    format: 'image/png',
+    transparent: true,
+    attribution: 'WMS Service provided by Skåne Regional Council'
 }).addTo(map);
 
 var marker = L.marker([55.704660, 13.191007]).addTo(map);
