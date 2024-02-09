@@ -1,1 +1,81 @@
-#map { height: 180px; }
+
+
+#homedrop{
+    width: 500px;
+}
+
+body {
+    background-image: url('http://awsassets.panda.org/img/original/olesya_kuznetsova_shutterstock_717825115_1600x1067px.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+#title {
+    order: -1; /* This will move the title to the left */
+    color: white;
+    padding-left: 20px; /* Adjust this value as needed */
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    width: 60%; /* Adjust this value as needed */
+}
+
+#map {
+    margin: 100vh auto 0; /* This will push the map down by the height of the viewport */
+    width: 80%; /* Adjust this value as needed */
+    height: 600px; /* Adjust this value as needed */
+}
+
+#contact {
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f8f8; /* Change this to your preferred color */
+}
+/*
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+#map {
+    height: 500px; /
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+*/
+
+
+#buttons {
+    display: flex;
+    justify-content: space-around;
+    background-color: blue;
+    padding: 10px;
+}
+
+#buttons a {
+    text-decoration: none;
+    color: white;
+}
