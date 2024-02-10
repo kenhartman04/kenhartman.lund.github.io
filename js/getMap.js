@@ -1,4 +1,3 @@
-/***********************************************LOAD LAYERS**************************************************************************************************/
 // Define custom icons for start and end points
 var startIcon = L.icon({
   iconUrl: "https://leafletjs.com/examples/custom-icons/leaf-green.png", // Green leaf icon
